@@ -1,5 +1,5 @@
 <template>
-  <div class="Reveived">
+  <div class="Received">
     <v-container>
       <v-row>      
         <Products />

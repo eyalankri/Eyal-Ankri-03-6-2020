@@ -33,7 +33,7 @@
               </v-list-item-content>
             </v-list-item>
             </div>
-            <div v-else>There is no aggrigated data yet...</div>
+            <div v-else>There is no aggrigated data yet. please REMOVE products...</div>
           </v-container>
         </v-card>
       </v-tab-item>
@@ -49,6 +49,9 @@ export default {
   data: () => ({
     arrAggrigatedData: null
   }),
+  mounted(){
+    this.aggrigateData()
+  },
   methods: {
     aggrigateData() {
       let products = (this.products = this.$store.state.products);
